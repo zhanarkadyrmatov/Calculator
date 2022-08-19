@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.calculator-grid {
+  width: 300px;
+  height: auto;
+  margin: 100px auto;
+  border: 1px solid #000;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px #000;
+  border-radius: 5px;
+}
+
+.output {
+  width: 298px;
+  height: 100px;
+  background-color: blue;
+  box-shadow: inset 5px 5px 15px rgb(19, 16, 16);
+}
+
+.colunm__1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  height: 50px;
+}
+
+.colunm__2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 50px;
+}
+
+.colunm__3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 50px;
+}
+.colunm__4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 50px;
+}
+.colunm__5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  height: 50px;
+}
+
+.calculator-grid button {
+  margin: 2px 4px 4px 0px;
+  box-shadow: 5px 5px 5px #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calculator-grid button:active {
+  box-shadow: inset 3px 3px 5px #000;
+  transform: translateX(3px) translateY(3px);
+}
+
+.calculator-grid button:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.span-two {
+  background-color: rgb(5, 156, 0);
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 10px;
+  font-size: 30px;
+  color: #fff;
+  height: 100px;
+  width: auto;
+}
